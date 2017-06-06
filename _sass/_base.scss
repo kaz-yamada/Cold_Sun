@@ -1,0 +1,33 @@
+$content-width: 1200px;
+$font-style: "Raleway", sans-serif;
+$primary: #FF7b08;
+$body-bg-color: #53463E;
+$main-bg-color: #1f1f1f;
+$font-color: #ffffff;
+$link-hover-color: #d60002;
+$light: #ffce4d;
+$secondary: #512821;
+$header-height: 50px;
+$footer: #1f1f1f;
+$grid-spacing: 15px;
+
+/// Mixin printing a linear-gradient
+/// as well as a plain color fallback
+/// and the `-webkit-` prefixed declaration
+/// @access public
+/// @param {Keyword | Angle} $direction - Linear gradient direction
+/// @param {Arglist} $color-stops - List of color-stops composing the gradient
+
+@mixin linear-gradient($direction, $color-stops...) {
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}

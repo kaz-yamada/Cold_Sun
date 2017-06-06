@@ -1,0 +1,22 @@
+---
+layout: default
+title: Blog
+---
+
+<div id="post-loop">
+	<div class="row">
+		{% for post in site.posts %}
+		<div class="column col-4 post-panel">
+			<time>{{ post.date | date: "%b %-d, %Y" }}</time>
+			<h3 class="post-loop-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+			<p>{{ post.excerpt }}</p>
+			<a href="{{ post.url | prepend: site.baseurl }}" class="button">Read More</a>
+		</div>
+		{% endfor %}
+	</div>
+	<div class="row">
+		<div class="column">
+			<p>subscribe <a href="{{ " /feed.xml " | prepend: site.baseurl }}">via RSS</a></p>
+		</div>
+	</div>
+</div>

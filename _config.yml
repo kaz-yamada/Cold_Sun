@@ -16,8 +16,8 @@
 title: Cold Sun
 email:
 description: This is a website created with Jekyll.
-baseurl: http://kaz-yamada.github.io/Cold_Sun # the subpath of your site, e.g. /blog
-url: http://kaz-yamada.github.io # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://kaz-yamada.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Social icons and sharing options
 twitter_username:

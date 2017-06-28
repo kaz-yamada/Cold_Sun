@@ -5,8 +5,7 @@
     </div>
     <div class="row">
       <ul class="social-icon-list">
-        {% for social in site.social %}
-        {% if social.url != null %}
+        {% for social in site.social %} {% if social.url != null %}
         <li>
           <a href="{{ social.url }}" title="{{ social.desc }}"><i class="fa fa-{{ social.icon }}"></i></a>
         </li>

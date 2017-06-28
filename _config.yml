@@ -14,19 +14,20 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Cold Sun
-email:
-description: This is a website created with Jekyll.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://kaz-yamada.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+email: youremail@example.com
+description: This is a website description.
+
+# the subpath of your site, e.g. /blog
+# If you're hosting your site at a Project repository on GitHub pages
+# (http://yourusername.github.io/repository-name)
+# and NOT your User repository (http://yourusername.github.io)
+# then add in the baseurl here, like this: "/repository-name"
+baseurl: ""
+
+# the base hostname & protocol for your site, e.g. http://example.com
+url: ""
 
 # Social icons and sharing options
-twitter_username:
-github_username:
-linkedin_username:
-google_plus_username:
-facebook_username:
-dribbble_username:
-
 social:
   - name: Twitter
     icon: twitter
@@ -92,6 +93,7 @@ author:
 # Build settings
 markdown: kramdown
 gems:
+  - jekyll-sitemap
   - jekyll-feed
 exclude:
   - Gemfile

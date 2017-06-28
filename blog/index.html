@@ -2,11 +2,10 @@
 layout: default
 title: Blog
 ---
-
-<div id="post-loop">
-	<div class="row">
+<div id="post-loop" class="row display">
+	<div class="small-up-2 medium-up-3 large-up-3">
 		{% for post in site.posts %}
-		<div class="column col-4 post-panel">
+		<div class="column post-panel">
 			<time>{{ post.date | date: "%b %-d, %Y" }}</time>
 			<h3 class="post-loop-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
 			<p>{{ post.excerpt }}</p>
@@ -14,9 +13,8 @@ title: Blog
 		</div>
 		{% endfor %}
 	</div>
-	<div class="row">
-		<div class="column">
-			<p>subscribe <a href="{{ " /feed.xml " | prepend: site.baseurl }}">via RSS</a></p>
-		</div>
-	</div>
+</div>
+
+<div class="row columns large-12">
+	<p>subscribe <a href="{{ " /feed.xml " | prepend: site.baseurl }}">via RSS</a></p>
 </div>

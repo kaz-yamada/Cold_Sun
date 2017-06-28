@@ -1,29 +1,38 @@
-<div id="navbar">
-	<nav>
-		<div class="row">
-			<div class="container">
-				<ul>
-					<li class="home-button">
-							<a href="{{ site.url }}">{{ site.title }}</a>
-					</li>
+<nav id="navbar">
+	<div class="top-bar">
+		<div class="top-bar-title">
+			<span data-responsive-toggle="responsive-menu" data-hide-for="medium">
+      <button class="menu-icon dark" type="button" data-toggle></button>
+    </span>
+			<a href="{{ site.baseurl }}">{{ site.title }}</a>
+		</div>
+		<div id="responsive-menu">
+			<div class="top-bar-left">
+				<ul class="dropdown menu" data-dropdown-menu>
 					{% for page in site.pages %} {% if page.url contains "projects/" %} {% if page.title %}
 					<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
 					{% endif %} {% endif %} {% endfor %}
 					<li><a href="{{ " /blog " | prepend: site.baseurl }}">Blog</a></li>
 				</ul>
 			</div>
+			<div class="top-bar-right">
+				<ul class="menu">
+					<li><input type="search" placeholder="Search"></li>
+					<li><button type="button" class="button">Search</button></li>
+				</ul>
+			</div>
 		</div>
-	</nav>
-	<!-- NAV -->
-	<header>
-		<div class="container">
-			{% if page.title != null %}
-			<h1>{{ page.title }}</h1>
-			{% else %}
-			<h1>{{ site.title }}</h1>
-			{% endif %}
-		</div>
-	</header>
-	<!-- HEADER -->
-</div>
-<!-- #navbar -->
+	</div>
+</nav>
+<!-- NAV -->
+{% if site.title or page.title %}
+<header>
+	<div class="row expanded">
+		{% if page.title %}
+		<h1>{{ page.title }}</h1> {% else %}
+		<h1>{{ site.title }}</h1>
+		<h5>{{ site.description }}</h5> {% endif %}
+	</div>
+</header>
+{% endif %}
+<!-- HEADER -->

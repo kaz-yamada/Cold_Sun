@@ -1,9 +1,14 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
   color: $body-font-color;
   font-family: $font-style;
-  font-size: 1.1em;
+  font-size: 1em;
   background-color: $body-background;
   line-height: 1.5;
 }
@@ -80,6 +85,8 @@ pre {
 }
 
 table {
+  border-spacing: 0;
+
   thead {
     tr {
       th {
@@ -150,10 +157,12 @@ nav {
 
   .top-bar {
     background-color: $primary-color;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0;
+    margin-bottom: 0;
 
     .top-bar-title {
+      padding: 0 8px;
+
       a {
         color: $body-font-color;
         padding: 1rem;
@@ -171,8 +180,8 @@ nav {
       background-color: $primary-color;
       margin: auto;
 
-      li {        
-        display: inline-block;
+      li {
+        display: block;
 
         a {
           color: $body-font-color;
@@ -187,7 +196,13 @@ nav {
 
         input,
         button {
-          margin: 0.5rem;
+          margin: 0.4rem 1rem;
+        }
+      }
+
+      @media screen and (min-width: 640px) {
+        li {
+          display: inline-block;
         }
       }
     }
@@ -199,14 +214,12 @@ nav {
 --------------------------------------------------------------*/
 header {
   text-align: center;
-  height: 300px;
+  margin: 50px 0;
+  padding: 20px 0;
 
   @include linear-gradient($primary-color, $secondary-color);
 
   .row {
-    padding-top: 70px;
-    padding-bottom: 40px;
-
     h1 {
       font-size: 2.5em;
       color: $body-font-color;
@@ -228,8 +241,12 @@ header {
  --------------------------------------------------------------*/
 main {
   min-height: 400px;
-  padding: 30px 10px;
+  padding: 30px;
   background-color: $body-background;
+}
+
+.content {
+  min-height: 50vh;
 }
 
 img {
@@ -263,12 +280,14 @@ img {
  # Footer
  --------------------------------------------------------------*/
 footer {
-  @include linear-gradient($footer, $body-background);
+  @include linear-gradient($body-background, $footer);
 
   width: 100%;
   padding: 40px;
   text-align: center;
   font-size: 0.7em;
+  height: $footer-height;
+  position: relative;
 
   .social-icon-list {
     padding-left: 0;

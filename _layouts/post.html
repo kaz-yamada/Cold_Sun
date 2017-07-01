@@ -1,13 +1,21 @@
 ---
 layout: default
 ---
-<div id="post-wrapper">
-  <h2>{{ page.title }}</h2>
-  <time>
+<header>
+	<div class="row expanded">
+		<h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+		<h5>{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}</h5>
+		<span class="meta">Posted by {{ page.author }} on {{ page.date | date: "%B %-d, %Y" }}</span>
+	</div>
+</header><!-- Header -->
+
+<div class="row">
+	<div class="columns">
+		<h2>{{ page.title }}</h2>
+		<time>
     {{ page.date | date: "%b %-d, %Y" }}
     {% if page.author %} {{ page.author }}{% endif %}
     {% if page.meta %} {{ page.meta }} {% endif %}
-  </time>
-  {{ content }}
-</div>
-<!-- #post-wrapper -->
+  </time> {{ content }}
+</div><!-- .columns -->
+</div><!-- .row -->

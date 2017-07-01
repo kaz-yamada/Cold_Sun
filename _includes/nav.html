@@ -1,5 +1,5 @@
 <nav id="navbar">
-	<div class="top-bar">
+	<div class="top-bar row">
 		<div class="top-bar-title">
 			<span data-responsive-toggle="responsive-menu" data-hide-for="medium">
       <button class="menu-icon dark" type="button" data-toggle></button>
@@ -15,24 +15,7 @@
 					<li><a href="{{ " /blog " | prepend: site.baseurl }}">Blog</a></li>
 				</ul>
 			</div>
-			<div class="top-bar-right">
-				<ul class="menu">
-					<li><input type="search" placeholder="Search"></li>
-					<li><button type="button" class="button">Search</button></li>
-				</ul>
-			</div>
 		</div>
 	</div>
 </nav>
 <!-- NAV -->
-{% if site.title or page.title %}
-<header>
-	<div class="row expanded">
-		{% if page.title %}
-		<h1>{{ page.title }}</h1> {% else %}
-		<h1>{{ site.title }}</h1>
-		<h5>{{ site.description }}</h5> {% endif %}
-	</div>
-</header>
-{% endif %}
-<!-- HEADER -->

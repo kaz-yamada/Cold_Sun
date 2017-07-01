@@ -2,22 +2,17 @@
 <html>
 {% include head.html %}
 
-<body>
-	<div id="default-wrapper">
+<body class="defualt">
+	{% include nav.html %}
 
-		{% include header.html %}
-		<main>
-			<div class="row">
-				<article>
-					{{ content }}
-				</article>
-			</div>
-		</main>
-		<!-- MAIN -->
-		{% include footer.html %}
+	<div class="content">
+		{{ content }}
 	</div>
-	<script src="{{ " /assets/js/foundation.min.js " | prepend: site.baseurl }}"></script>
-	<script src="{{ " /assets/js/app.js " | prepend: site.baseurl }}"></script>
+	<!-- .content-->
+
+	{% include footer.html %}
+	<script src="{{ "/assets/js/foundation.min.js" | prepend: site.baseurl }}"></script>
+	<script src="{{ "/assets/js/app.js" | prepend: site.baseurl }}"></script>
 </body>
 
 </html>

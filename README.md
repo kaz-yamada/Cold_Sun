@@ -4,47 +4,75 @@ layout: default
 
 # Cold_Sun
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes` and your sass in `_sass`. To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
+Cold_Sun is a single column Jekyll theme built using [Foundation 6](http://foundation.zurb.com/) by Zurb, for your personal site, blog, portfolio.
 
-TODO: Delete this and the text above, and describe your gem
+## Features
+
+ - Uses Jekyll's SASS/SCSS preprocesser
+ - Uses JQuery 3
+
+## File Sturcture
+
+ - **_includes** Repeatable bits of HTML snippets
+ - **_layouts** html layouts of pages
+ - **_posts** Blog posts
+
+## Asset files
+ - **js** Add site JavaScript to app.js. Vendor libraries are added as minified where available.
+ - **css** Includes compiled css file from the **_scss** folder
+
+## Demo
+
+<https://kaz-yamada.github.io/Cold_Sun>
 
 ## Installation
 
-Add this line to your Jekyll site's `Gemfile`:
+###Requires
+- Ruby 2.1+
+- Git
 
-```ruby
-gem "Cold_Sun"
+#### Step 1
+
+Navigate to https://github.com/kaz-yamada/Cold_Sun.git and click the 'clone or download' button and 'Download ZIP'
+Open Git Bash and enter:
+
+```
+$ gem install jekyll
 ```
 
-And add this line to your Jekyll site's `_config.yml`:
+#### Step 2
 
-```yaml
-theme: Cold_Sun
+git clone https://github.com/kaz-yamada/Cold_Sun.git
+
+#### Step 3
+
+Unzip the contents of the archive to the newly created file
+
+#### Step 4
+
+Navigate to the newly created file via the command line and enter:
+
+```
+$ jekyll serve
 ```
 
-And then execute:
+Or
 
-    $ bundle
+```
+$ bundle exec jekyll serve
+```
 
-Or install it yourself as:
+#### Step 5
 
-    $ gem install Cold_Sun
+Open up the browser of choice and enter <https://localhost:4000>
 
-## Usage
+## Credits
 
-TODO: Write usage instructions here. Describe your available layouts, includes, and/or sass.
+### Creator
 
-## Contributing
+**Kazuki Yamada***
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-## Development
-
-To set up your environment to develop this theme, run `bundle install`.
-
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-When your theme is released, only the files in `_layouts`, `_includes`, and `_sass` tracked with Git will be released.
+- <https://kaz-yamada.github.io>
 
 ## License
 

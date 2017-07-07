@@ -27,7 +27,7 @@ Cold_Sun is a single column Jekyll theme built using [Foundation 6](http://found
 
 ## Installation
 
-###Requires
+### Requires
 - Ruby 2.1+
 - Git
 

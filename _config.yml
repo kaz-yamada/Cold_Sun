@@ -95,6 +95,7 @@ markdown: kramdown
 gems:
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-paginate
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -103,6 +104,8 @@ sass:
 include: ['_pages']
 kramdown:
   input: GFM
+paginate: 9
+paginate_path: "/blog/page:num/"
 defaults:
   -
     values:

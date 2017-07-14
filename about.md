@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+permalink: about
 ---
 
 Bacon ipsum dolor amet alcatra sint elit salami brisket ground round kevin picanha. Ipsum boudin aliquip ut, jowl incididunt corned beef do leberkas est sausage non consequat. Venison frankfurter cillum chuck pariatur lorem. Sausage tongue irure, reprehenderit velit alcatra veniam dolore dolor dolore ut pork belly esse.

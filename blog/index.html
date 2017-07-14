@@ -5,7 +5,7 @@ title: Blog
 
 <div id="post-loop" class="row display">
 	<div class="columns small-up-1 medium-up-2 large-up-3">
-		{% for post in site.posts %}
+		{% for post in paginator.posts %}
 		<div class="column post-panel">
 			<h3 class="post-loop-title title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
 			<time>{{ post.date | date: "%b %-d, %Y" }}</time>

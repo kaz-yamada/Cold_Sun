@@ -145,66 +145,74 @@ blockquote::after {
 /*--------------------------------------------------------------
  # Navigation bar
 ---------------------------------------------------------------*/
-nav {
-  background-color: $primary-color;
-  margin: 0 auto;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 2;
-  box-shadow: 0 1px 1px rgba(4, 25, 54, 0.1);
-
+#navbar {
   .top-bar {
     background-color: $primary-color;
     padding: 0;
     margin-bottom: 0;
+  }
 
-    .top-bar-title {
-      padding: 0 8px;
+  .title-bar {
+    background-color: $primary-color;    
+  }
+
+  button {
+    height: 20px;
+    margin-left: 10px;
+  }
+
+  .top-bar-title {
+    margin-left: 10px;
+    padding: 0 8px;
+    display: inline-block;
+
+    span {
+      display: inline;
+    }
+
+    a {
+      color: $body-font-color;
+      padding: 1rem;
+      display: inline-block;
+      line-height: 1.5;
+      text-decoration: none;
+    }
+
+    a:hover {
+      background: $link-hover-color;
+    }
+  }
+
+  .menu {
+    background-color: $primary-color;
+    margin: auto;
+
+    li {
+      display: block;
 
       a {
         color: $body-font-color;
-        padding: 1rem;
-        display: inline-block;
-        line-height: 1.5;
         text-decoration: none;
+        padding: 1rem;
+        line-height: 1.5;
       }
 
       a:hover {
         background: $link-hover-color;
       }
+
+      input,
+      button {
+        margin: 0.4rem 1rem;
+      }
     }
+  }
+}
 
-    .menu {
-      background-color: $primary-color;
-      margin: auto;
-
-      li {
-        display: block;
-
-        a {
-          color: $body-font-color;
-          text-decoration: none;
-          padding: 1rem;
-          line-height: 1.5;
-        }
-
-        a:hover {
-          background: $link-hover-color;
-        }
-
-        input,
-        button {
-          margin: 0.4rem 1rem;
-        }
-      }
-
-      @media screen and (min-width: 640px) {
-        li {
-          display: inline-block;
-        }
-      }
+@media screen and (max-width: 640px) {
+  #navbar {
+    .title-bar {
+      display: none;
     }
   }
 }
@@ -214,8 +222,9 @@ nav {
 --------------------------------------------------------------*/
 header {
   text-align: center;
-  margin: 50px 0;
+  margin-bottom: 50px;
   padding: 20px 0;
+  min-height: 200px;
 
   @include linear-gradient($primary-color, $secondary-color);
 
@@ -237,12 +246,47 @@ header {
 }
 
 /*--------------------------------------------------------------
+ # Side Panel
+ --------------------------------------------------------------*/
+.off-canvas {
+  background-color: $body-font-color;
+  color: $body-background;
+  padding: 60px 10px;
+
+  .menu {
+    li {
+      border-top: solid 1px $body-background;
+      padding: 10px 0px;
+    }
+
+    li:last-of-type {
+      border-bottom: solid 1px $body-background;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
  # Main Content
  --------------------------------------------------------------*/
 main {
   min-height: 400px;
-  padding: 30px;
   background-color: $body-background;
+  width: 100%;
+  transition: .3s ease all;
+}
+
+.page,
+.content {
+  width: 100%;
+  max-width: $content-width;
+  margin: auto;
+  padding: 20px;
+
+  @media screen and (max-width: $content-width) {
+    .column {
+      margin: -20px 0;
+    }
+  }
 }
 
 .content {
@@ -262,11 +306,13 @@ img {
 }
 
 /*--------------------------------------------------------------
- # Blog loop
+ ## Blog loop
  --------------------------------------------------------------*/
 #post-loop {
   .post-loop-title {
-    a {}
+    a {
+      text-decoration: none;
+    }
   }
 
   .post-panel {
@@ -277,11 +323,13 @@ img {
 }
 
 /*--------------------------------------------------------------
+ ## Posts
+ --------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
  # Footer
  --------------------------------------------------------------*/
 footer {
-  @include linear-gradient($body-background, $footer);
-
   width: 100%;
   padding: 40px;
   text-align: center;
@@ -320,6 +368,13 @@ footer {
   .footer-bottom {
     text-align: center;
   }
+}
+
+/*--------------------------------------------------------------
+# Icons
+ --------------------------------------------------------------*/
+.menu-icon {
+  margin-top: 2px;
 }
 
 /*--------------------------------------------------------------

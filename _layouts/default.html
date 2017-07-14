@@ -2,14 +2,15 @@
 <html>
 {% include head.html %}
 
-<body class="defualt">
+<body id="defualt">
+	{% include side-canvas.html %}
 	{% include nav.html %}
 
-	<div class="content">
+	<main class="off-canvas-content row" data-off-canvas-content>
 		{{ content }}
-	</div><!-- .content-->
-
-	{% include footer.html %}
+		{% include footer.html %}
+	</main>
+	<!-- .main-->
 </body>
 
 </html>

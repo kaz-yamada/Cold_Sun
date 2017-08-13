@@ -39,7 +39,11 @@ $ gem install jekyll
 
 #### Step 2
 
+In the console, type:
+
+```
 git clone https://github.com/kaz-yamada/Cold_Sun.git
+```
 
 #### Step 3
 

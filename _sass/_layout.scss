@@ -143,6 +143,37 @@ blockquote::after {
 }
 
 /*--------------------------------------------------------------
+ # Social Icons
+---------------------------------------------------------------*/
+.social-icon-list {
+  padding-left: 0;
+
+  li {
+    list-style: none;
+    line-height: 1.5;
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    a {
+      text-decoration: none;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      border: 2px solid;
+      border-radius: 100%;
+      text-align: center;
+      font-size: 20px;
+      line-height: 45px;
+    }
+
+    i {
+      width: 40px;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
  # Navigation bar
 ---------------------------------------------------------------*/
 #navbar {
@@ -153,7 +184,7 @@ blockquote::after {
   }
 
   .title-bar {
-    background-color: $primary-color;    
+    background-color: $primary-color;
   }
 
   button {
@@ -203,17 +234,26 @@ blockquote::after {
 
       input,
       button {
-        margin: 0.4rem 1rem;
+        margin: 1rem;
       }
     }
   }
 }
 
-@media screen and (max-width: 640px) {
+@media print, screen and (min-width: 40em) {
   #navbar {
     .title-bar {
       display: none;
     }
+  }
+}
+
+/*--------------------------------------------------------------
+ # Side bar
+---------------------------------------------------------------*/
+#sideNavigation {
+  .close-button:focus {
+    outline-width: 0;
   }
 }
 
@@ -257,6 +297,10 @@ header {
     li {
       border-top: solid 1px $body-background;
       padding: 10px 0px;
+    }
+
+    li:first-of-type {
+      border-top: none;
     }
 
     li:last-of-type {
@@ -336,34 +380,6 @@ footer {
   font-size: 0.7em;
   height: $footer-height;
   position: relative;
-
-  .social-icon-list {
-    padding-left: 0;
-
-    li {
-      list-style: none;
-      line-height: 1.5;
-      display: inline-block;
-      padding-left: 5px;
-      padding-right: 5px;
-
-      a {
-        text-decoration: none;
-        display: inline-block;
-        width: 50px;
-        height: 50px;
-        border: 2px solid;
-        border-radius: 100%;
-        text-align: center;
-        font-size: 20px;
-        line-height: 45px;
-      }
-
-      i {
-        width: 40px;
-      }
-    }
-  }
 
   .footer-bottom {
     text-align: center;

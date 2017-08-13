@@ -31,8 +31,8 @@ url: ""
 social:
   - name: Twitter
     icon: twitter
-    username:
-    url:
+    username: twitter
+    url: twitter.com
     share: true
 
   - name: Facebook

@@ -8,9 +8,9 @@ description: List of github repositories
 		{% for repository in site.github.public_repositories %}
 		<div class="large-12 panel">
 			<h3 class="title">{{ repository.name }}</h3>
-			<p>{{ site.github.project_tagline }}</p>
+			<p>{{ repository.description }}</p>
 			<a href="{{ repository.html_url }}" class="button">Repository</a>
-			<a href="{{ site.github.pages_hostname }}" class="button">Homepage</a>
+			<a href="{{ repository.homepage }}" class="button">Homepage</a>
 		</div>
 		{% endfor %}
 	</div>

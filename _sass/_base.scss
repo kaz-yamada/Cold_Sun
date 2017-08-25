@@ -11,11 +11,26 @@ $header-height: 50px;
 $footer: #8c8c8c;
 $footer-height: 250px;
 
+// Overrite Foundation styling;
 $foundation-palette: (primary: $primary-color, secondary: $secondary-color, success: #3adb76, warning: #ffae00, alert: #cc4b37);
 
-// Overrite Foundation styling;
 $topbar-title-spacing: 0;
 $titlebar-icon-color-hover: $secondary-color;
+
+$card-background: $body-background;
+$card-font-color: $body-font-color;
+$card-divider-background: $body-background;
+$card-border: 1px solid $primary-color;
+
+$accordion-title-font-size: 1em;
+$accordion-content-background: $body-background;
+
+$table-background: $body-background;
+$table-head-background: $body-font-color;
+$table-border: 1px solid $body-font-color;
+
+$tab-content-background: $body-background;
+$tab-item-font-size: 1em;
 
 // Shamelessly stolen from https://www.sitepoint.com/building-linear-gradient-mixin-sass/
 

@@ -100,15 +100,6 @@ table {
   }
 
   tbody {
-    tr {
-      background-color: $body-background;
-
-      td {
-        border-bottom: 1px solid #ccc;
-        padding: .75em;
-      }
-    }
-
     tr:nth-child(even) {
       background-color: $body-background;
     }
@@ -140,6 +131,33 @@ blockquote::after {
   content: '"';
   display: inline;
   font-size: 1.5em;
+}
+
+/*--------------------------------------------------------------
+# Foundation Customisation
+--------------------------------------------------------------*/
+.button {
+  border: 1px solid;
+  background: none;
+  font-size: 14px;
+  padding: 13px 30px;
+  text-decoration: none;
+  color: $primary-color;
+}
+
+.accordion {
+  .accordion-title {
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+
+.tabs {
+  .tabs-title,
+  .tabs-title a {
+    font-weight: bold;
+    text-decoration: none;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -384,7 +402,7 @@ header {
 }
 
 /*--------------------------------------------------------------
- # Main Content
+ # Content
  --------------------------------------------------------------*/
 main {
   min-height: 400px;
@@ -393,21 +411,27 @@ main {
   transition: .3s ease all;
 }
 
-.content {
-  min-height: 50vh;
-}
-
 img {
   max-width: 100%;
 }
 
-.button {
-  border: 1px solid;
-  background: none;
-  font-size: 14px;
-  padding: 13px 30px;
-  text-decoration: none;
-  color: $primary-color;
+.full-window {
+  width: 100vw;
+  height: 100vh;
+}
+
+.center-title {
+  text-align: center !important;
+}
+
+.banner {
+  display: table;
+
+  .banner-contents {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -483,4 +507,8 @@ footer {
  --------------------------------------------------------------*/
 .menu-icon {
   margin-top: 2px;
+}
+
+.centered {
+  margin: auto;
 }

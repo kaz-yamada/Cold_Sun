@@ -27,68 +27,74 @@ baseurl:
 # the base hostname & protocol for your site, e.g. http://example.com
 url: "http://kaz-yamada.github.io"
 
+# Site Author Information
+author:
+  name: "Your Name"
+  avatar: "https://help.github.com/assets/images/help/profile/identicon.png"
+  bio: "Biography goes here."
+  email: "username@website.com"
+
 # Social icons and sharing options
+# name: Name of site
+# icon: respective fontAwesome icon (remove the fa-)
+# username: username for site (optional)
+# url: link to profile page of site
+
 social:
   - name: Twitter
     icon: twitter
     username:
-    url:
-    share: true
+    url: "#"
 
   - name: Facebook
     icon: facebook
     username:
-    url:
-    share: true
+    url: "#"
 
   - name: GitHub
     icon: github
     username:
-    url:
-    share: false
+    url: "#"
 
   - name: LinkedIn
     icon: linkedin
     username:
-    url:
-    share: true
+    url: "#"
 
   - name: Google+
     icon: google-plus
     username:
     url:
-    share: true
 
   - name: YouTube
     icon: youtube
     username:
-    url:
-    share: false
+    url: "#"
 
   - name: Instagram
     icon: instagram
     username:
-    url:
-    share: false
+    url: "#"
 
   - name: Pinterest
     icon: pinterest
     username:
-    url:
-    share: true
+    url:  "#"
+
+  - name: Stackoverflow
+    icon: stack-overflow
+    username:
+    url: "#"
+
+  - name: Codepen
+    icon: codepen
+    username:
+    url: "#"
 
   - name: SoundCloud
     icon: soundcloud
     username:
     url:
-    share: false
-
-author:
-  name   : "Your Name"
-  avatar :
-  bio    : "Biography goes here."
-  email  : # optional
-  uri    : "http://example.com"
 
 # Build settings
 markdown: kramdown

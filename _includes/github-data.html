@@ -1,0 +1,27 @@
+<script>
+  var ghData = [];
+</script>
+
+{% for repository in site.github.public_repositories %}
+  <script>
+  $(function(){
+    $.ajax({
+      url: '{{ repository.url }}/topics',
+      type: 'GET',
+      headers: {
+        Accept: 'application/vnd.github.mercy-preview+json'
+      },
+      dataType: 'json',
+      success: function(data) {
+        if (data.name.length > 0) {
+          ghData = ghData.concat(data.name);
+        }
+      },
+      error: function() { console.log('Call failed'); }
+    });
+  } );
+  </script>
+{% endfor %}
+<script>
+  console.log(ghData);
+</script>

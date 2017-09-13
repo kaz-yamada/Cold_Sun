@@ -75,6 +75,10 @@ Open up the browser of choice and enter <https://localhost:4000>
 
 - <https://kaz-yamada.github.io>
 
+**Foundation 6**
+
+- <http://foundation.zurb.com/>
+
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).

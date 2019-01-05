@@ -22,51 +22,6 @@ Cold_Sun is a single column Jekyll theme built using [Foundation 6](http://found
 
 <https://kaz-yamada.github.io/Cold_Sun>
 
-## Installation
-
-### Requires
-- Ruby 2.1+
-- Git
-
-#### Step 1
-
-Navigate to https://github.com/kaz-yamada/Cold_Sun.git and click the 'clone or download' button and 'Download ZIP'
-Open Git Bash and enter:
-
-```
-$ gem install jekyll
-```
-
-#### Step 2
-
-In the console, type:
-
-```
-git clone https://github.com/kaz-yamada/Cold_Sun.git
-```
-
-#### Step 3
-
-Unzip the contents of the archive to the newly created file
-
-#### Step 4
-
-Navigate to the newly created file via the command line and enter:
-
-```
-$ jekyll serve
-```
-
-Or
-
-```
-$ bundle exec jekyll serve
-```
-
-#### Step 5
-
-Open up the browser of choice and enter <https://localhost:4000>
-
 ## Credits
 
 ### Creator

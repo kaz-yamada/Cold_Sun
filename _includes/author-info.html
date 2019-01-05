@@ -1,0 +1,27 @@
+<div id="author-info" class="author-info-container">
+  {% if page.author and site.data.authors[page.author] %} {% assign author =
+  site.data.authors[page.author] %} {% else %} {% assign author = site.author %}
+  {% endif %}
+  <!-- Author avatar -->
+  {% if author.avatar %}
+  <div class="author-avatar">
+    {% if author.avatar contains "://" %}
+    <img class="thumbnail" src="{{ author.avatar }}" alt="{{ author.name }}" />
+    {% else %}
+    <img
+      class="thumbnail"
+      src="{{ author.avatar | absolute_url }}"
+      class="author__avatar"
+      alt="{{ author.name }}"
+    />
+    {% endif %}
+  </div>
+  {% endif %}
+  <div class="author-info-meta">
+    {% if author.name %}
+    <div class="author-name">{{ author.name }}</div>
+    {% endif %} {% if author.email %}
+    <div class="author-email cell small-3">{{ author.email }}</div>
+    {% endif %}
+  </div>
+</div>

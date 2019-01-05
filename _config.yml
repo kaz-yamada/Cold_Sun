@@ -79,7 +79,7 @@ social:
   - name: Pinterest
     icon: pinterest
     username:
-    url:  "#"
+    url: "#"
 
   - name: Stackoverflow
     icon: stack-overflow
@@ -91,11 +91,6 @@ social:
     username:
     url: "#"
 
-  - name: SoundCloud
-    icon: soundcloud
-    username:
-    url:
-
 # Build settings
 markdown: kramdown
 plugins:
@@ -105,14 +100,18 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
-sass:
-  sass_dir: _sass
-include: ['_pages']
+  - node_modules
+  - bower_components
+  - src
+  - webpack.config.js
+# sass:
+#   sass_dir: src/_sass
+#   style: compressed
+include: ["_pages"]
 kramdown:
   input: GFM
 paginate: 9
 paginate_path: "/blog/page:num/"
 defaults:
-  -
-    values:
+  - values:
       layout: "page"

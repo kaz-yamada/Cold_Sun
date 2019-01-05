@@ -1,0 +1,42 @@
+{
+  "name": "cold_sun",
+  "version": "1.0.0",
+  "description": "Jekyll Theme",
+  "dependencies": {
+    "foundation-sites": "^6.5.1",
+    "motion-ui": "^2.0.3",
+    "prismjs": "^1.15.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.0",
+    "jquery": "^3.3.1",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.1.1",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production",
+    "start": "webpack --mode=development --progress --watch | bundle exec jekyll serve",
+    "dev": "webpack --mode=development --progress --watch | bundle exec jekyll serve",
+    "stats": "webpack --json > stats.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaz-yamada/Cold_Sun.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaz-yamada/Cold_Sun/issues"
+  },
+  "homepage": "https://github.com/kaz-yamada/Cold_Sun#readme"
+}

@@ -1,0 +1,44 @@
+.page-header {
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.social-list,
+.social-icon-list {
+  list-style: none;
+  margin: 0 0 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+
+  li {
+    margin: 0.3rem;
+
+    a {
+      padding: 0 0.7em;
+    }
+  }
+}
+
+#author-info {
+  display: flex;
+
+  .author-avatar {
+    max-width: 6em;
+  }
+
+  .author-info-meta {
+    margin: 0.7em;
+  }
+}
+
+.page-footer {
+  .cell {
+    text-align: center;
+  }
+}

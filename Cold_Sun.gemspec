@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["kaz-yamada"]
   spec.email         = ["kaz.yamada@outlook.com"]
 
-  spec.summary       = %q{A jekyll theme built using Foundation 6.}
+  spec.summary       = %q{A jekyll theme built with Zurb Foundation 6.}
   spec.homepage      = "https://kaz-yamada.github.io"
   spec.license       = "MIT"
 
@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
     f.match(%r{^(_(includes|layouts|sass)/|(LICENSE|README)((\.(txt|md|markdown)|$)))}i)
   end
 
-  spec.add_runtime_dependency "jekyll", "~> 3.5"
+  # spec.add_runtime_dependency "jekyll", "~> 3.8.5"
 
   spec.add_development_dependency "bundler", "~> 1.12"
   spec.add_development_dependency "rake", "~> 10.0"

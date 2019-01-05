@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 <html>
-{% include head.html %}
+  {% include head.html %}
 
-<body id="defualt">
-	{% include side-canvas.html %}
-	{% include topbar.html %}
+  <body id="defualt">
+    {% include side-canvas.html %} {% include topbar.html %}
 
-	<div class="off-canvas-content" data-off-canvas-content>
-		<main>
-			{{ content }}
-			{% include footer.html %}
-		</main>
-	</div>
-	<!-- .main-->
-</body>
-
+    <div class="off-canvas-content main" data-off-canvas-content>
+      <main>{{ content }} {% include footer.html %}</main>
+    </div>
+    <!-- .main-->
+  </body>
 </html>

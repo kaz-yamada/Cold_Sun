@@ -5,8 +5,7 @@ Cold_Sun is a single column Jekyll theme built using [Foundation 6](http://found
 
 ## Features
 
- - Uses Jekyll's SASS/SCSS preprocesser
- - Uses JQuery 3
+ - JS & SCSS compiled using webpack
 
 ## File Sturcture
 

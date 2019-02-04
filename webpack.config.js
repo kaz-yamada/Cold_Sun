@@ -3,9 +3,9 @@ const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-module.exports = (env, argv) => {
-  var devMode = argv.mode === "development";
+// "start": "npm run-script clean:project && webpack --env=dev --progress --profile --colors && concurrently \"webpack-dev-server --env=dev\" \"bundle exec jekyll serve\"", 
 
+module.exports = (env, argv) => {
   return {
     entry: "./src/index.js",
     output: {
@@ -22,8 +22,8 @@ module.exports = (env, argv) => {
         {
           test: /\.s?[ac]ss$/,
           use: [
-            // MiniCssExtractPlugin.loader,
-            devMode ? "style-loader" : MiniCssExtractPlugin.loader,
+            MiniCssExtractPlugin.loader,
+            // devMode ? "style-loader" : MiniCssExtractPlugin.loader,
             {
               loader: "css-loader",
               options: {

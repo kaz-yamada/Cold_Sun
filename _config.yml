@@ -103,6 +103,7 @@ exclude:
   - node_modules
   - bower_components
   - src
+  - gulpfile.js
   - webpack.config.js
 # sass:
 #   sass_dir: src/_sass

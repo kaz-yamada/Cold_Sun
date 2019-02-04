@@ -25,9 +25,9 @@ This is a normal paragraph following a header. GitHub is a code hosting platform
 ```javascript
 // Javascript code with syntax highlighting.
 var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
+  dateformat.i18n = require("./lang/" + l);
   return true;
-}
+};
 ```
 
 ```ruby
@@ -51,16 +51,16 @@ end
 
 ###### [](#header-6)Header 6
 
-head1        | head two          | three
-:----------- | :---------------- | :----
-ok           | good swedish fish | nice
-out of stock | good and plenty   | nice
-ok           | good `oreos`      | hmm
-ok           | good `zoute` drop | yumm
+| head1        | head two          | three |
+| :----------- | :---------------- | :---- |
+| ok           | good swedish fish | nice  |
+| out of stock | good and plenty   | nice  |
+| ok           | good `oreos`      | hmm   |
+| ok           | good `zoute` drop | yumm  |
 
 ### There's a horizontal rule below this.
 
---------------------------------------------------------------------------------
+---
 
 ### Here is an unordered list:
 

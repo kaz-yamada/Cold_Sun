@@ -118,4 +118,4 @@ defaults:
   - values:
       layout: "page"
 
-remote_theme: kaz-yamada/Cold_Sun
+# remote_theme: kaz-yamada/Cold_Sun

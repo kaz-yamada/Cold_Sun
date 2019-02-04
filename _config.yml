@@ -96,7 +96,8 @@ markdown: kramdown
 plugins:
   - jekyll-sitemap
   - jekyll-feed
-  - jekyll-paginate
+  - jekyll-paginate  
+  - jekyll-remote-theme
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -116,3 +117,5 @@ paginate_path: "/blog/page:num/"
 defaults:
   - values:
       layout: "page"
+
+remote_theme: kaz-yamada/Cold_Sun

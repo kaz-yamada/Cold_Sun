@@ -40,6 +40,8 @@ author:
 # username: username for site (optional)
 # url: link to profile page of site
 
+repository: kaz-yamada/Cold_Sun
+
 social:
   - name: Twitter
     icon: twitter
@@ -107,7 +109,7 @@ exclude:
   - gulpfile.js
   - webpack.config.js
 # sass:
-#   sass_dir: src/_sass
+#   sass_dir: src/sass
 #   style: compressed
 include: ["_pages"]
 kramdown:

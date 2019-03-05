@@ -36,6 +36,10 @@
   }
 }
 
+#side-canvas-bar {
+  background: $body-background;
+}
+
 #author-info {
   display: flex;
 
@@ -56,4 +60,9 @@
   .cell {
     text-align: center;
   }
+}
+
+.project {
+  border: solid 2px $primary-color;
+  border-radius: 5px;
 }

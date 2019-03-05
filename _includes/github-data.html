@@ -2,11 +2,11 @@
   var ghData = [];
 </script>
 
-{% for repository in site.github.public_repositories %}
+{% for project in site.github.public_repositories %}
   <script>
   $(function(){
     $.ajax({
-      url: '{{ repository.url }}/topics',
+      url: '{{ project.url }}/topics',
       type: 'GET',
       headers: {
         Accept: 'application/vnd.github.mercy-preview+json'
